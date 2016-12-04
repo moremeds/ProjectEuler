@@ -7,7 +7,7 @@ import java.util.Scanner;
  * <p>
  * Created by chenxili on 02/06/2016.
  */
-public class SumSquareDifference {
+public class PrimeNum10001st {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -20,17 +20,23 @@ public class SumSquareDifference {
         }
 
         for (long num : numSet) {
-            int result = 0;
-
-            for(int index =1; index<=num; index++){
-                for(int index1=1; index1<=num; index1++){
-                    if(index!=index1){
-                        result = result + index1*index;
-                    }
+            int index = 1;
+            int order = 2;
+            while(index<=num){
+                if(isPrime(order)){
+                    index++;
                 }
+                order++;
             }
-
-            System.out.println(result);
+            System.out.println(--order);
         }
+    }
+
+    private static boolean isPrime(int n) {
+        for (int i = 2; i < Math.sqrt(n); i++) {
+            if (n % i == 0)
+                return false;
+        }
+        return true;
     }
 }

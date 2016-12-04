@@ -5,9 +5,11 @@ import java.util.Scanner;
 /**
  * ProjectEuler
  * <p>
- * Created by chenxili on 02/06/2016.
+ * Created by chenxili on 05/06/2016.
+ * <p>
+ * https://www.hackerrank.com/contests/projecteuler/challenges/euler009
  */
-public class SumSquareDifference {
+public class SpecialPythagoreanTriplet {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -20,17 +22,7 @@ public class SumSquareDifference {
         }
 
         for (long num : numSet) {
-            int result = 0;
 
-            for(int index =1; index<=num; index++){
-                for(int index1=1; index1<=num; index1++){
-                    if(index!=index1){
-                        result = result + index1*index;
-                    }
-                }
-            }
-
-            System.out.println(result);
         }
     }
 }

@@ -2,6 +2,8 @@
  * ProjectEuler
  * <p>
  * Created by chenxili on 31/05/2016.
+ *
+ * https://www.hackerrank.com/contests/projecteuler/challenges/euler002
  */
 public class PerfectSquareCollection {
 

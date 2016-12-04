@@ -3,6 +3,9 @@ import java.util.*;
 /**
  * ProjectEuler
  * <p>
+ *
+ *     https://www.hackerrank.com/contests/projecteuler/challenges/euler001
+ *
  * Created by chenxili on 31/05/2016.
  */
 public class Multiple3Or5 {
@@ -21,6 +24,7 @@ public class Multiple3Or5 {
             long result;
             num = num - 1;
 
+            // something wrong with the round up
             double num_3 = Math.floor(num / 3);
             long sum_3 = (long) (3 * ((num_3 + 1) * num_3) / 2);
 

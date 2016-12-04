@@ -6,6 +6,10 @@ import java.util.Scanner;
  * ProjectEuler
  * <p>
  * Created by chenxili on 01/06/2016.
+ *
+ * https://www.hackerrank.com/contests/projecteuler/challenges/euler003
+ *
+ * Successful
  */
 public class LargestPrimeFactor {
     public static void main(String[] args) {

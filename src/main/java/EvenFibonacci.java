@@ -24,15 +24,14 @@ public class EvenFibonacci {
             int results = 0;
 
             long index = 0;
-            long fibo = getFibonacci(0);
-            while (fibo < num) {
-                if (fibo % 2 == 0) {
-                    results += fibo;
+            long fibonacci = getFibonacci(0);
+            while (fibonacci < num) {
+                if (fibonacci % 2 == 0) {
+                    results += fibonacci;
                 }
-                fibo = getFibonacci(index);
+                fibonacci = getFibonacci(index);
                 index++;
             }
-
             System.out.println(results);
 
         }
